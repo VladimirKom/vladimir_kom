@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .all {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .bl {
+        background-color: rgb(204, 204, 204);
+        width: 15em;
+        float: left;
+    }
+
+    .st {
+        background-color: rgb(170, 170, 170);
+        margin-bottom: 0.2em;
+        margin-left: 15em;
+        padding: 1px;
+    }
+
+    .niz {
+        background-color: rgb(189, 187, 187);
+    }
+
+    .none {
+        clear: both;
+    }
+</style>
+<body>
+    <div class="all">
+        <div class="bl">
+            <h1>Блок навигации</h1>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Распологается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал зхватывать сторую статью, как показано в данном примере</li>
+            </ul>
+        </div>
+        <div class="st">
+            <h1>Статья 1</h1>
+            <p>Размер блока:
+                Занимает всю достуаную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom 
+            </p>
+        </div>
+        <div class="st">
+            <h1>Статья 2</h1>
+            <p>Размер блока:
+                Занимает всю достуаную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки. 
+            </p>
+            <img src="icon_mail.png" alt="nail" width="100" align="right">
+        </div>
+        <div class="none"></div>
+        <div class="niz">Нижний блок, подвал. Занимает всю доступную ширишу. Высота определяется помещенным внутрь контентом
+        </div>
+    </div>
+</body>
+</html>
