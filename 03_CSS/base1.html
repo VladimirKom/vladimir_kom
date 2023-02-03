@@ -6,11 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.MenuLevel1 { width: 100px }
-     div.MenuLevel1 > div { background-color: rgb(148, 228, 214); border: solid rgb(0, 0, 0) 1px; position: relative; cursor: pointer }
-    div.MenuLevel2 { width: 150px; display: none }
-    div.MenuLevel2 > div { background-color: rgb(113, 165, 165); border: solid rgb(0, 0, 0) 1px; cursor: pointer }
-    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+        div{ 
+            border-radius: 3px;
+        }
+        div.MenuLevel1 > div{
+            width: 100px;
+            height: 20px;
+            background-color: #d3d3d3;
+            border: solid #012 1px;
+            cursor: pointer;
+            float: left;
+        }
+        div.MenuLevel2{
+            opacity: 0;
+            visibility: hidden;
+            transition-property: opacity, visibility;
+            transition-duration: 0.01s;
+            transition-delay: 0.01s;
+        }
+        div.MenuLevel2 > div{
+            background-color: #d3d3d3;
+            border: solid #012 1px;
+            width: 100px;
+            display: inline-table;
+        }
+        div.MenuLevel1 > div:hover div.MenuLevel2{
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+        }
+        @media all and (max-width: 600px){
+            div.MenuLevel2{
+                width: 350px;
+                margin-top: -18px;
+                margin-left: 100px;
+                display: table;
+            }
+            div.MenuLevel1 > div{
+                float: none;
+            }
+            div.MenuLevel1 > div:hover div.MenuLevel2{
+                bottom: 41px;
+            }
+        }
     </style>
 </head>
 <body>
